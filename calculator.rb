@@ -7,6 +7,9 @@ def operation
   return operation
 end
 
+
+
+=begin
 def calculate(operation, x, y)
   case operation  
   when 1 
@@ -19,15 +22,16 @@ def calculate(operation, x, y)
     puts "your answer is: #{x / y}"
   end
 end
-
+=end
 puts "Please enter first number"
 x=gets.chomp.to_i
 puts "Please enter second number"
 y=gets.chomp.to_i
 puts "please enter your operation"
 
+add=lambda{ |x| puts x}
+add(1);
 
-
-operation = operation()
-calculate(operation, x, y)
+#operation = operation()
+#calculate(operation, x, y)
 
